@@ -28,7 +28,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="dark" />
-      <Text style={styles.header}>Mi tienda</Text><Text style={{ paddingHorizontal: 18, paddingBottom: 10, color: '#475569' }}>Precios referenciales: USD 1 = S/ 3.75</Text>
+      <Text style={styles.header}>Mi tienda</Text>
       {selected ? (
         <ScrollView contentContainerStyle={styles.detail}>
           <Pressable style={styles.button} onPress={() => setSelected(null)}>
@@ -87,4 +87,5 @@ const styles = StyleSheet.create({
   button: { backgroundColor: '#166534', padding: 14, borderRadius: 8, alignItems: 'center' },
   buttonText: { color: '#fff', fontWeight: 'bold' },
 });
+
 
